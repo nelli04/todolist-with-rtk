@@ -1,0 +1,17 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 8px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.listItemButton {
+    margin-top: auto; 
+    flex-grow: 1;
+}
