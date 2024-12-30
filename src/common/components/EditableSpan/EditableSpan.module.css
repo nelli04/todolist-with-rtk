@@ -1,0 +1,18 @@
+.scrollableText {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 9em; 
+  }
+
+  .rightToLeft:hover {
+    animation: rightToLeft 3.5s infinite linear;
+  }
+  
+  @keyframes  rightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
