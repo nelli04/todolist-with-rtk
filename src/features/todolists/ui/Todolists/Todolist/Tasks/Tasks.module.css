@@ -1,0 +1,19 @@
+.box {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;  
+    gap: 20px;
+}
+
+.typographyEmpty {
+    text-align: center;
+}
+
+.paper {
+    height: 80px;
+}
+
+.typographyDate {
+    display: flex;
+    justify-content: center;
+}
