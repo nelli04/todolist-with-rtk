@@ -5,15 +5,15 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
 import TextField from "@mui/material/TextField";
-import { useLogin } from "../../../lib/hooks/useLogin";
 import s from "./LoginForm.module.css";
+import { useLogin } from "features/auth/lib/hooks/useLogin";
 
 export const LoginForm = () => {
   const { onSubmit, handleSubmit, errors, register, control } = useLogin();
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <FormGroup>
+      <FormGroup sx={{color: "#000"}}>
         <TextField
           label="Email"
           margin="normal"
@@ -50,7 +50,7 @@ export const LoginForm = () => {
             />
           }
         />
-        <Button type={"submit"} variant={"contained"} color={"primary"}>
+        <Button type="submit" variant="contained" color="primary" sx={{ marginTop: "20px" }}>
           Login
         </Button>
       </FormGroup>
