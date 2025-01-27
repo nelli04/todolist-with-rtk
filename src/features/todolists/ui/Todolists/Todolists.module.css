@@ -1,0 +1,11 @@
+.container {
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    margin-top: 24px; 
+    gap: 24px; 
+    overflow-x: auto; 
+    min-height: 100vh;
+}
