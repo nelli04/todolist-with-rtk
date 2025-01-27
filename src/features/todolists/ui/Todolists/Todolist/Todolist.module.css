@@ -1,0 +1,7 @@
+.paper {
+    display: flex; 
+    flex-direction: column;
+    padding: 24px; 
+    min-height: 400px; 
+    width: 320px;
+}
