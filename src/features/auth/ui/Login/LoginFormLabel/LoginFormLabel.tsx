@@ -4,11 +4,11 @@ export const LoginFormLabel = () => {
   const { theme } = useLogin();
 
   return (
-    <>
+    <div style={{ color: theme.palette.text.primary }}>
       <p>
         To login get registered
         <a
-          style={{ color: theme.palette.primary.main, marginLeft: "5px" }}
+          style={{ marginLeft: "5px" }}
           href={"https://social-network.samuraijs.com/"}
           target={"_blank"}
           rel="noreferrer"
@@ -23,6 +23,6 @@ export const LoginFormLabel = () => {
       <p>
         <b>Password:</b> free
       </p>
-    </>
+    </div>
   );
 };
