@@ -36,7 +36,7 @@ export const Task = ({ task, todolist }: Props) => {
   const changeTaskStatusHandler = (e: ChangeEvent<HTMLInputElement>) => {
     let status = e.currentTarget.checked ? TaskStatus.Completed : TaskStatus.New;
     const model = createTaskModel(task, { status });
-    updateTask({ taskId: task.id, todolistId: todolist.id, model });
+    updateTask({ taskId: task.id, todolistId: todolist.id, model }).unwrap().then(() => successToast("Status Changed!"));
   };
 
   const changeTaskTitleHandler = (title: string) => {
