@@ -21,7 +21,8 @@ export const App = () => {
 
   const dispatch = useAppDispatch();
 
-  const { data, isLoading } = useMeQuery();
+  const token = localStorage.getItem("sn-token");
+  const { data, isLoading } = useMeQuery(undefined, {skip: !token});
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("themeMode");
