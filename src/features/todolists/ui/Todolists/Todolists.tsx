@@ -26,7 +26,7 @@ export const Todolists = () => {
     );
   }
   return (
-    <Container className={style.container}>
+    <Container maxWidth="lg" sx={{ "&.MuiContainer-root": { padding: "0px" } }}>
       <Box className={style.box}>
         {todolists?.length === 0 ? (
           <Typography variant="h6">No To-Do Lists available.</Typography>
